@@ -27,9 +27,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate authorized_keys file
-        run: ./authorized_keys_gen.sh
-
       - name: Build and push images
         uses: docker/build-push-action@v6
         with:
