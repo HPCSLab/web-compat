@@ -19,3 +19,4 @@ RUN a2enmod authz_groupfile
 RUN a2enmod userdir
 
 COPY userdir2.conf /etc/apache2/mods-enabled/userdir.conf
+COPY upload-limit.ini /usr/local/etc/php/conf.d/upload-limit.ini
